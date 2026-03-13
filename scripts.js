@@ -50,7 +50,7 @@ function dragElement(element) {
     document.onmousemove = null;
   }
 }
-var welcomescreen = document.querySelector("#welcome")
-function closeWindow(element) {
-    element.style.display = "none";
-}
+// Add event listener for closing the welcome window
+document.getElementById("welcomeclose").addEventListener("click", function() {
+  document.getElementById("welcome").style.display = "none";
+});

@@ -6,3 +6,13 @@
   background-position: center;
   background-attachment: fixed;
 }
+.closebutton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-color: #ff1500;
+  border-radius: 16px;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  margin-left: 6px;
+  
+}
