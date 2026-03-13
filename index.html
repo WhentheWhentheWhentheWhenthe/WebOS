@@ -7,7 +7,7 @@
 </head>
 <body class="bg">
   <div id="welcome" style="border: solid; width: fit-content; border-radius: 21px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: aqua; cursor: move; user-select: none;">
-   <p class="closebutton" id="welcomeclose" >X</p>
+   <button type="button" class="closebutton" id="welcomeclose" >X</button>
     <h1 style="margin: 3px;">Welcome to my OS that i made which is an extension of my previous personal website that I made</h1>
     <p id="welcomeheader">Here you can find some random things i made and some info about me</p>
     <img src="https://files.catbox.moe/yzr9pf.gif"/>
@@ -22,23 +22,27 @@
     <script src="scripts.js"></script>
 
     <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
-      <img id="catIcon" src="https://media1.tenor.com/m/CnGwq2I5un8AAAAC/miau-hd-adobe-after-effects-glass-breaking-preset.gif" style="width: 64px; height: 64px; border-radius: 16px;" />
-      <p>random miau pic</p>
+      <img id="catIcon" src="https://media1.tenor.com/m/CnGwq2I5un8AAAAC/miau-hd-adobe-after-effects-glass-breaking-preset.gif" style="width: 64px; height: 64px; border-radius: 16px; cursor: pointer;" />
+      <p>random cat pic</p>
     </div>
         <div id="infoicon"
       style="text-align: center; margin: 8px; padding: 8px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;">
-      <img src="https://blob.gifcities.org/gifcities/2OJX63T7MHABUDPYPYX7TA2KBC7JA5N4.gif" style="width: 64px; height: 64px; border-radius: 16px;">
+      <img src="https://blob.gifcities.org/gifcities/2OJX63T7MHABUDPYPYX7TA2KBC7JA5N4.gif" style="width: 64px; height: 64px; border-radius: 16px; cursor: pointer;">
       <p style="margin: 0px; color: #fff; "></p>
       <p>about me</p>
     </div>
     <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
-      <img id="paintIcon" src="https://blob.gifcities.org/gifcities/2EM3RDUHE2H65RLVZOZ2ID7P4MIJEMMO.gif" style="width: 64px; height: 64px; border-radius: 16px;" />
+      <img id="paintIcon" src="https://blob.gifcities.org/gifcities/2EM3RDUHE2H65RLVZOZ2ID7P4MIJEMMO.gif" style="width: 64px; height: 64px; border-radius: 16px; cursor: pointer;" />
       <p>paint</p>
+    </div>
+      <div id="buttonDesktop" style="text-align: center; margin: 8px; padding: 8px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;">
+      <img id="buttonIcon" src="https://blob.gifcities.org/gifcities/72HNEPECYYKOWHCG3L4QJ5FBCFXCLQI4.gif" style="width: 64px; height: 64px; border-radius: 16px; cursor: pointer;" />
+      <p>buttons</p>
     </div>
     <div class="window" id="catimg" style="display: none; position: absolute; top: calc(50% - 240px); left: calc(50% - 260px);">
       <div class="windowheader" id="catimgheader">
-        <div class="closebutton" id="catimgclose"></div>
-        <p class="headertext">miau image</p>
+        <button type="button" class="closebutton" id="catimgclose">X</button>
+        <p class="headertext">cat image</p>
         <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
       </div>
       <div style="background-color: #00ff6a; margin: 6px; border-radius: 12px; width: 520px; height: 480px; padding: 16px;">
@@ -50,8 +54,7 @@
     </div>
     <div class="aboutme" id="aboutme" style="top: calc(50% - 90px); left: calc(50% - 180px); display: none; ">
     <div class="windowheader" id="aboutmeheader">
-      <div class="closebutton" id="aboutmeclose">
-      </div>
+      <button type="button" class="closebutton" id="aboutmeclose">X</button>
       <p class="headertext">Info</p>
       <div style="width: 16px; margin-right: 6x; height: 16px;"></div>
     </div>
@@ -70,16 +73,38 @@
       <div style="width: 16px; margin-right: 6x; height: 16px;"></div>
     </div>
   </div>
-
     <div class="window" id="paint" style="display: none; position: absolute; top: calc(50% - 240px); left: calc(50% - 260px);">
       <div class="windowheader" id="paintheader">
-        <div class="closebutton" id="paintclose"></div>
+        <button type="button" class="closebutton" id="paintclose">X</button>
         <p class="headertext">Paint</p>
         <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
       </div>
       <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 520px; height: 480px; padding: 16px;">
        <iframe src="https://jspaint.app" width="100%" height="100%" style="border: none;"></iframe>
       </div>
+    </div>
+    <div class="window" id="buttons" style="display: none; position: absolute; top: calc(50% - 240px); left: calc(50% - 260px);">
+      <div class="windowheader" id="buttonheader">
+        <button type="button" class="closebutton" id="buttonclose">X</button>
+        <p class="headertext">buttons of varying designs</p>
+        <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+      </div>
+ <a href="https://bomberfish.ca/"><img src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/a4a07c629485ee8581d9a87ccfbc750f1d59eb28_button.gif" alt="Clickable Image" style="width: 88px; height: 31px;">
+<a href="https://www.valen.zip/"><img src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/69f4c114302df512bc255a9a2931631a1a51f39e_scrappy-88x31.gif" alt="Clickable Image" style="width: 88px; height: 31px;">
+<a href="https://aconlin.com/"><img src="https://gideon.sh/buttons/acon.gif" alt="Clickable Image" style="width: 88px; height: 31px;">
+<a href="http://gideon.sh/"><img src="https://gideon.sh/88x31.gif" alt="Clickable Image" style="width: 88px; height: 31px;">
+<a href="http://hackclub.com/"><img src="https://bomberfish.ca/buttons/hackclub.gif" alt="Clickable Image" style="width: 88px; height: 31px;">
+<br><br>
+<a href="https://tcrf.net/The_Cutting_Room_Floor"><img src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/839281c537b9f871_screenshot_2025-12-13_132140.png" alt="Clickable Image" style="width: 88px; height: 31px;">
+<a href="https://github.com/"><img src="https://bomberfish.ca/buttons/github.gif" alt="Clickable Image" style="width: 88px; height: 31px;">  
+<a href="https://froppii.dev/"><img src="https://froppii.dev/button.gif" alt="Clickable Image" style="width: 88px; height: 31px;">   
+<a href="https://vvqb.dev/"><img src="https://vvqb.dev/88x31/vvqb_dev.gif" alt="Clickable Image" style="width: 88px; height: 31px;">   
+<a href="https://lucida.to/"><img src="https://lucida.to/buttons/freemusicnow.png" alt="Clickable Image" style="width: 88px; height: 31px;">
+  <br><br>
+  <a href="https://ublockorigin.com/"><img src="https://beepi.ng/buttons/ublock.webp" alt="Clickable Image" style="width: 88px; height: 31px;"> 
+  <a href="https://store.steampowered.com/app/420530/OneShot/"><img src="https://hex4.xyz/88x31/oneshot.gif" alt="Clickable Image" style="width: 88px; height: 31px;"> 
+  <a href="https://hex4.xyz/"><img src="https://hex4.xyz/88x31/hex4.gif" alt="Clickable Image" style="width: 88px; height: 31px;">    
+  </div>
     </div>
   </body>
 

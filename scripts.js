@@ -17,6 +17,10 @@ function dragElement(element, headerElement) {
   // Step 6: Define the `startDragging` function to capture the initial mouse position and set up event listeners.
   function startDragging(e) {
     e = e || window.event;
+    // Check if the target is a close button, don't drag
+    if (e.target.classList.contains('closebutton') || e.target.id.includes('close')) {
+      return;
+    }
     e.preventDefault();
     // Get current position and remove transform for dragging
     var rect = element.getBoundingClientRect();
@@ -130,8 +134,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const paintHeader = document.getElementById("paintheader");
     dragElement(paintWindow, paintHeader);
   }
+
+  // Buttons window
+  const buttonIcon = document.getElementById("buttonDesktop");
+  const buttonWindow = document.getElementById("buttons");
+  const buttonClose = document.getElementById("buttonclose");
+
+  if (buttonIcon && buttonWindow) {
+    buttonIcon.addEventListener("click", () => {
+      buttonWindow.style.display = "block";
+    });
   }
-);
+
+  if (buttonClose && buttonWindow) {
+    buttonClose.addEventListener("click", () => {
+      buttonWindow.style.display = "none";
+    });
+  }
+
+  if (buttonWindow) {
+    dragElement(buttonWindow);
+  }
+});
 
 function selectIcon(element) {
   element.classList.add("selected");
