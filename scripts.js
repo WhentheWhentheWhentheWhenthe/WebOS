@@ -1,6 +1,3 @@
-// Make the DIV element draggable:
-dragElement(document.getElementById("welcome"));    
-
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
   // Step 2: Set up variables to keep track of the element's position.
@@ -50,7 +47,46 @@ function dragElement(element) {
     document.onmousemove = null;
   }
 }
-// Add event listener for closing the welcome window
-document.getElementById("welcomeclose").addEventListener("click", function() {
-  document.getElementById("welcome").style.display = "none";
+
+// Wait until the DOM is ready before wiring up the UI.
+document.addEventListener("DOMContentLoaded", function () {
+  const welcome = document.getElementById("welcome");
+  if (welcome) {
+    dragElement(welcome);
+  }
+
+  const welcomeClose = document.getElementById("welcomeclose");
+  if (welcomeClose && welcome) {
+    welcomeClose.addEventListener("click", function () {
+      welcome.style.display = "none";
+    });
+  }
+
+  // Cat image window: open on icon click, close on its close button
+  const catWindow = document.getElementById("catimg");
+  const catIcon = document.getElementById("catIcon");
+  const catClose = document.getElementById("catimgclose");
+
+  if (catIcon && catWindow) {
+    catIcon.addEventListener("click", () => {
+      catWindow.style.display = "block";
+    });
+  }
+
+  if (catClose && catWindow) {
+    catClose.addEventListener("click", () => {
+      catWindow.style.display = "none";
+    });
+  }
+
+  if (catWindow) {
+    // Make the cat window draggable as well
+    dragElement(catWindow);
+  }
 });
+
+function selectIcon(element) {
+  element.classList.add("selected");
+  selectedIcon = element;
+}
+ 

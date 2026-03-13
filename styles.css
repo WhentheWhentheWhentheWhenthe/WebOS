@@ -13,6 +13,32 @@
   background-color: #ff1500;
   border-radius: 16px;
   border: solid 1px rgba(0, 0, 0, 0.25);
-  margin-left: 6px;
-  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.window {
+  position: absolute;
+  background: rgba(0, 255, 98, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+.windowheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.headertext {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
 }
