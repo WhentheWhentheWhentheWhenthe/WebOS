@@ -83,10 +83,39 @@ document.addEventListener("DOMContentLoaded", function () {
     // Make the cat window draggable as well
     dragElement(catWindow);
   }
+
+  // About me window
+  const infoIcon = document.getElementById("infoicon");
+  const aboutMeWindow = document.getElementById("aboutme");
+  const aboutMeClose = document.getElementById("aboutmeclose");
+
+  if (infoIcon && aboutMeWindow) {
+    infoIcon.addEventListener("click", () => {
+      aboutMeWindow.style.display = "block";
+    });
+  }
+
+  if (aboutMeClose && aboutMeWindow) {
+    aboutMeClose.addEventListener("click", () => {
+      aboutMeWindow.style.display = "none";
+    });
+  }
+
+  if (aboutMeWindow) {
+    dragElement(aboutMeWindow);
+  }
 });
 
 function selectIcon(element) {
   element.classList.add("selected");
   selectedIcon = element;
 }
- 
+
+function handleIconTap(icon, window) {
+  window.style.display = window.style.display === "none" ? "block" : "none";
+}
+
+function initializeWindow(type) {
+  // Placeholder for future initialization
+  console.log("Initializing window for " + type);
+}
