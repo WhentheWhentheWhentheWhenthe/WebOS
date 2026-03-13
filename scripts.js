@@ -1,14 +1,18 @@
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
-function dragElement(element) {
+// Optional: provide a headerElement to only allow dragging from that element
+function dragElement(element, headerElement) {
   // Step 2: Set up variables to keep track of the element's position.
   var initialX = 0;
   var initialY = 0;
   var currentX = 0;
   var currentY = 0;
 
+  // Use headerElement if provided, otherwise use the whole element
+  var dragHandle = headerElement || element;
+
   // Step 3: Assign the `startDragging` function to the draggable element's `onmousedown` event.
   // This allows you to drag the window by holding down anywhere on the window.
-  element.onmousedown = startDragging;
+  dragHandle.onmousedown = startDragging;
 
   // Step 6: Define the `startDragging` function to capture the initial mouse position and set up event listeners.
   function startDragging(e) {
@@ -104,7 +108,30 @@ document.addEventListener("DOMContentLoaded", function () {
   if (aboutMeWindow) {
     dragElement(aboutMeWindow);
   }
-});
+
+  // Paint window
+  const paintIcon = document.getElementById("paintIcon");
+  const paintWindow = document.getElementById("paint");
+  const paintClose = document.getElementById("paintclose");
+
+  if (paintIcon && paintWindow) {
+    paintIcon.addEventListener("click", () => {
+      paintWindow.style.display = "block";
+    });
+  }
+
+  if (paintClose && paintWindow) {
+    paintClose.addEventListener("click", () => {
+      paintWindow.style.display = "none";
+    });
+  }
+
+  if (paintWindow) {
+    const paintHeader = document.getElementById("paintheader");
+    dragElement(paintWindow, paintHeader);
+  }
+  }
+);
 
 function selectIcon(element) {
   element.classList.add("selected");
