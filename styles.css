@@ -1,0 +1,8 @@
+.bg {
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(https://files.catbox.moe/o8be3y.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

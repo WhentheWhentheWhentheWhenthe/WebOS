@@ -5,8 +5,9 @@
     "version": "0.2.0",
     "configurations": [
     
+    
         {
-            "type": "msedge",
+            "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
             "file": "c:\\Users\\Henrique\\Documents\\GitHub\\WebOS\\index.html"
