@@ -8,185 +8,133 @@
 
 <body class="bg">
 
-<script src="scripts.js"></script>
-
-<!-- Welcome window -->
+<!-- Welcome Window -->
 <div id="welcome" style="border: solid; width: fit-content; border-radius:21px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background-color:aqua; cursor:move; user-select:none;">
-<button type="button" class="closebutton" id="welcomeclose">X</button>
-
-<h1 style="margin:3px;">Welcome to my OS that I made which is an extension of my previous personal website</h1>
-
-<p id="welcomeheader">Here you can find some random things I made and some info about me</p>
-
-<img src="https://files.catbox.moe/yzr9pf.gif">
-
-<br>
-<h4>^^goog^^</h4>
-<br>
-<h4>did you know this window can be dragged? try it!</h4>
+  <button type="button" class="closebutton" id="welcomeclose" style="width: 20px; height: 20px; cursor: pointer; background-color: #ff1500; border: solid 1px rgba(0, 0, 0, 0.25); display: flex; align-items: center; justify-content: center; border-radius: 10px; position: absolute; left: 10px; top: 10px; font-size: 14px;">X</button>
+  <br><br>
+  <h1 style="margin:3px;">Welcome to my OS that I made which is an extension of my previous personal website</h1>
+  <p id="welcomeheader">Here you can find some random things I made and some info about me</p>
+  <img src="https://files.catbox.moe/yzr9pf.gif">
+  <br>
+  <h4>^^goog^^</h4>
+  <br>
+  <h4>Did you know this window can be dragged? Try it!</h4>
 </div>
-
 
 <p>
 <a href="https://henriqueswebsite.vercel.app/">the original website that isnt an os can be found here</a>
 </p>
 
-
 <!-- Desktop Icons -->
-
 <div class="desktopApp" style="padding-top:64px; padding-left:16px;">
-<img id="catIcon" src="https://media1.tenor.com/m/CnGwq2I5un8AAAAC/miau-hd-adobe-after-effects-glass-breaking-preset.gif" style="width:64px;height:64px;border-radius:16px;cursor:pointer;">
-<p>random cat pic</p>
+  <img id="catIcon" src="https://media1.tenor.com/m/CnGwq2I5un8AAAAC/miau-hd-adobe-after-effects-glass-breaking-preset.gif" style="width:64px;height:64px;border-radius:16px;cursor:pointer;">
+  <p>random cat pic</p>
 </div>
-
 
 <div id="infoicon" style="text-align:center;margin:8px;padding:8px;filter:drop-shadow(0 0 8px black);width:fit-content;cursor:pointer;">
-<img src="https://blob.gifcities.org/gifcities/2OJX63T7MHABUDPYPYX7TA2KBC7JA5N4.gif" style="width:64px;height:64px;border-radius:16px;">
-<p>about me</p>
+  <img src="https://blob.gifcities.org/gifcities/2OJX63T7MHABUDPYPYX7TA2KBC7JA5N4.gif" style="width:64px;height:64px;border-radius:16px;">
+  <p>about me</p>
 </div>
-
 
 <div class="desktopApp" style="padding-top:64px; padding-left:16px;">
-<img id="paintIcon" src="https://blob.gifcities.org/gifcities/2EM3RDUHE2H65RLVZOZ2ID7P4MIJEMMO.gif" style="width:64px;height:64px;border-radius:16px;cursor:pointer;">
-<p>paint</p>
+  <img id="paintIcon" src="https://blob.gifcities.org/gifcities/2EM3RDUHE2H65RLVZOZ2ID7P4MIJEMMO.gif" style="width:64px;height:64px;border-radius:16px;cursor:pointer;">
+  <p>paint</p>
 </div>
-
 
 <div id="buttonDesktop" style="text-align:center;margin:8px;padding:8px;filter:drop-shadow(0 0 8px black);width:fit-content;cursor:pointer;">
-<img src="https://blob.gifcities.org/gifcities/72HNEPECYYKOWHCG3L4QJ5FBCFXCLQI4.gif" style="width:64px;height:64px;border-radius:16px;">
-<p>buttons</p>
+  <img src="https://blob.gifcities.org/gifcities/72HNEPECYYKOWHCG3L4QJ5FBCFXCLQI4.gif" style="width:64px;height:64px;border-radius:16px;">
+  <p>buttons</p>
 </div>
-
 
 <div id="musicDesktop" style="text-align:center;padding:16px;filter:drop-shadow(0 0 8px black);width:fit-content;cursor:pointer;">
-<img src="https://blob.gifcities.org/gifcities/4JIDCRB7XP5ZVXSZ3GCU5Q4GIKKZVF26.gif" style="width:64px;height:64px;border-radius:16px;">
-<p>music</p>
+  <img src="https://blob.gifcities.org/gifcities/4JIDCRB7XP5ZVXSZ3GCU5Q4GIKKZVF26.gif" style="width:64px;height:64px;border-radius:16px;">
+  <p>music</p>
 </div>
 
+<div id="pinballDesktop" style="text-align:center;padding:16px;filter:drop-shadow(0 0 8px black);width:fit-content;cursor:pointer;">
+  <img src="https://blob.gifcities.org/gifcities/4SX4BKMMZ2VD2E4ZXHTTPXO44WSSADBW.gif" style="width:64px;height:64px;border-radius:16px;">
+  <p>pinball</p>
+</div>
 
-<!-- Cat window -->
+<!-- Windows -->
 
+<!-- Cat Window -->
 <div class="window" id="catimg" style="display:none; position:absolute; top:calc(50% - 240px); left:calc(50% - 260px);">
-
-<div class="windowheader" id="catimgheader">
-<button type="button" class="closebutton" id="catimgclose">X</button>
-<p class="headertext">cat image</p>
+  <div class="windowheader" id="catimgheader">
+    <button type="button" class="closebutton" id="catimgclose">X</button>
+    <p class="headertext">Cat Image</p>
+  </div>
+  <div style="background:#00ff6a;margin:6px;border-radius:12px;width:520px;height:480px;padding:16px;">
+    <img src="https://cataas.com/cat?type=square&fit=contain&position=center" style="max-width:100%;border-radius:12px;">
+    <p>Here is a cat image</p>
+    <a href="https://cataas.com/" target="_blank">API for cat images</a>
+  </div>
 </div>
 
-<div style="background:#00ff6a;margin:6px;border-radius:12px;width:520px;height:480px;padding:16px;">
-
-<img src="https://cataas.com/cat?type=square&fit=contain&position=center" style="max-width:100%;border-radius:12px;">
-
-<p>here is cat image</p>
-
-<a href="https://cataas.com/" target="_blank">api for cat image here</a>
-
-</div>
-</div>
-
-
-<!-- About me window -->
-
+<!-- About Me Window -->
 <div class="aboutme" id="aboutme" style="top:calc(50% - 90px);left:calc(50% - 180px);display:none;">
-
-<div class="windowheader" id="aboutmeheader">
-<button type="button" class="closebutton" id="aboutmeclose">X</button>
-<p class="headertext">Info</p>
+  <div class="windowheader" id="aboutmeheader">
+    <button type="button" class="closebutton" id="aboutmeclose">X</button>
+    <p class="headertext">Info</p>
+  </div>
+  <div style="background:#aa3c3c;margin:6px;border-radius:12px;width:360px;padding:16px;">
+    <img src="https://files.catbox.moe/dgkmc3.jpg" style="width:100px;height:100px;">
+    <p>
+    My name is Henrique. I have made some projects like 1 game on Godot that is a platformer, and this site and the other site you can find linked above. I use things like HTML and CSS. I also use Windows 11. And no, I can't really switch to Linux since TP-Link drivers are wonky on Linux.
+    </p>
+  </div>
 </div>
 
-<div style="background:#aa3c3c;margin:6px;border-radius:12px;width:360px;padding:16px;">
-
-<img src="https://files.catbox.moe/dgkmc3.jpg" style="width:100px;height:100px;">
-
-<p>
-My name is Henrique. I have made some projects like 1 game on Godot that is a platformer,
-and this site and the other site you can find linked above.
-I use things like HTML and CSS. I also use Windows 11.
-And no, I can't really switch to Linux since TP-Link drivers are wonky on Linux.
-</p>
-
-</div>
-</div>
-
-
-<!-- Paint window -->
-
+<!-- Paint Window -->
 <div class="window" id="paint" style="display:none; position:absolute; top:calc(50% - 240px); left:calc(50% - 260px);">
-
-<div class="windowheader" id="paintheader">
-<button type="button" class="closebutton" id="paintclose">X</button>
-<p class="headertext">Paint</p>
+  <div class="windowheader" id="paintheader">
+    <button type="button" class="closebutton" id="paintclose">X</button>
+    <p class="headertext">Paint</p>
+  </div>
+  <div style="background:#fff;margin:6px;border-radius:12px;width:520px;height:480px;padding:16px;">
+    <iframe src="https://jspaint.app" width="100%" height="100%" style="border:none;"></iframe>
+  </div>
 </div>
 
-<div style="background:#fff;margin:6px;border-radius:12px;width:520px;height:480px;padding:16px;">
-
-<iframe src="https://jspaint.app" width="100%" height="100%" style="border:none;"></iframe>
-
-</div>
-</div>
-
-
-<!-- Buttons window -->
-
+<!-- Buttons Window -->
 <div class="window" id="buttons" style="display:none; position:absolute; top:calc(50% - 240px); left:calc(50% - 260px);">
-
-<div class="windowheader" id="buttonheader">
-<button type="button" class="closebutton" id="buttonclose">X</button>
-<p class="headertext">buttons of varying designs</p>
+  <div class="windowheader" id="buttonheader">
+    <button type="button" class="closebutton" id="buttonclose">X</button>
+    <p class="headertext">Buttons</p>
+  </div>
+  <div style="padding:16px;">
+    <a href="https://bomberfish.ca/"><img src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/a4a07c629485ee8581d9a87ccfbc750f1d59eb28_button.gif" style="width:88px;height:31px;"></a>
+  </div>
 </div>
 
-<a href="https://bomberfish.ca/"><img src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/a4a07c629485ee8581d9a87ccfbc750f1d59eb28_button.gif" style="width:88px;height:31px;"></a>
-
-<a href="https://www.valen.zip/"><img src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/69f4c114302df512bc255a9a2931631a1a51f39e_scrappy-88x31.gif" style="width:88px;height:31px;"></a>
-
-<a href="https://aconlin.com/"><img src="https://gideon.sh/buttons/acon.gif" style="width:88px;height:31px;"></a>
-
-<a href="http://gideon.sh/"><img src="https://gideon.sh/88x31.gif" style="width:88px;height:31px;"></a>
-
-<a href="http://hackclub.com/"><img src="https://bomberfish.ca/buttons/hackclub.gif" style="width:88px;height:31px;"></a>
-
-<br><br>
-
-<a href="https://tcrf.net/The_Cutting_Room_Floor"><img src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/839281c537b9f871_screenshot_2025-12-13_132140.png" style="width:88px;height:31px;"></a>
-
-<a href="https://froppii.dev/"><img src="https://froppii.dev/button.gif" style="width:88px;height:31px;"></a>
-
-<a href="https://vvqb.dev/"><img src="https://vvqb.dev/88x31/vvqb_dev.gif" style="width:88px;height:31px;"></a>
-
-<a href="https://lucida.to/"><img src="https://lucida.to/buttons/freemusicnow.png" style="width:88px;height:31px;"></a>
-
-<br><br>
-
-<a href="https://ublockorigin.com/"><img src="https://beepi.ng/buttons/ublock.webp" style="width:88px;height:31px;"></a>
-
-<a href="https://store.steampowered.com/app/420530/OneShot/"><img src="https://hex4.xyz/88x31/oneshot.gif" style="width:88px;height:31px;"></a>
-
-<a href="https://hex4.xyz/"><img src="https://hex4.xyz/88x31/hex4.gif" style="width:88px;height:31px;"></a>
-
+<!-- Music Window -->
+<div class="window" id="music" style="display:none; position:absolute; top:calc(50% - 240px); left:calc(50% - 260px); width:520px;">
+  <div class="windowheader" id="musicheader">
+    <button type="button" class="closebutton" id="musicclose">X</button>
+    <p class="headertext">Music</p>
+  </div>
+  <div style="background:#ffe600;margin:6px;border-radius:12px;width:100%;height:480px;padding:16px;">
+    <iframe src="https://archive.org/embed/klonoa-2-soundtrack" width="100%" height="100%" style="border:none;" allowfullscreen></iframe>
+  </div>
 </div>
 
-
-<!-- Music window -->
-
-<div class="window" id="music" style="display:none; position:absolute; top:calc(50% - 240px); left:calc(50% - 260px);">
-
-<div class="windowheader" id="musicheader">
-<button type="button" class="closebutton" id="musicclose">X</button>
-<p class="headertext">Music</p>
+<!-- Pinball Window -->
+<div class="window" id="pinball" style="display:none; position:absolute; top:calc(50% - 240px); left:calc(50% - 260px); width:520px; height:480px;">
+  <div class="windowheader" id="pinballheader">
+    <button type="button" class="closebutton" id="pinballclose">X</button>
+    <p class="headertext">Astro Pinball</p>
+  </div>
+  <div style="background:white;margin:6px;border-radius:12px;width:100%;height:calc(100% - 40px);padding:0;">
+    <iframe src="https://cdn.htmlgames.com/SpacePinball/index.html" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  </div>
 </div>
 
-<div style="background:#ffe600;margin:6px;border-radius:12px;width:520px;height:480px;padding:16px;">
-
-<iframe src="https://archive.org/embed/klonoa-2-soundtrack"
-width="100%"
-height="100%"
-style="border:none;"
-allowfullscreen></iframe>
-<br><br>
-<iframe src="https://archive.org/embed/klonoadoortophantomileost" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-
+  <!-- Container for the script, no padding/margin/width/height -->
+  <div id="pinballContent" style="background:white;margin:0;border-radius:12px;">
+    <script src="https://cdn.htmlgames.com/SpacePinball/index.html"></script>
+  </div>
 </div>
-</div>
-
+<script src="scripts.js"></script>
 </body>
 </html>
+<!-- if you're reading this then i would like to tell you that the comments were because i needed to fix some stuff and i used chatgpt to fix it --
